@@ -20,7 +20,7 @@ public:
 	void set();
 	void get();
 	void operacionSincrona(unsigned short writeData, unsigned char writeReg,
-	 unsigned char shamt, bool WR, bool SHE, bool DIR, bool CLR);
+	unsigned char readReg1, unsigned char shamt, bool WR, bool SHE, bool DIR, bool CLR);
 	void operacionAsincrona(bool CLR);
 	void operacionAsincrona(bool CLR, 
 		unsigned char readReg1, unsigned char readReg2);

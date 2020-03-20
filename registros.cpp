@@ -45,7 +45,7 @@ void archivoRegistros::clr(){
 }
 
 void archivoRegistros::operacionSincrona(unsigned short writeData, unsigned char writeReg,
-	 unsigned char shamt, bool WR, bool SHE, bool DIR, bool CLR){
+	unsigned char readReg1, unsigned char shamt, bool WR, bool SHE, bool DIR, bool CLR){
 	if(CLR){
 		clr();
 	}else if(WR){
